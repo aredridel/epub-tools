@@ -2,7 +2,6 @@
 	import '../app.css';
 	import { Layout } from '$lib/frame/index.ts';
 	import type { Snippet } from 'svelte';
-	import { page } from '$app/state';
 	import type { PageProps } from './$types';
 
 	let { children, data }: { children: Snippet; data: PageProps['data'] } = $props();
@@ -24,7 +23,7 @@
 				<li><a href="signup">Signup</a></li>
 			{:else}
 				<li><a href="upload">Upload</a></li>
-				<li><a href="logout">Logout</a></li>
+				<li><a data-sveltekit-reload href="logout">Logout</a></li>
 			{/if}
 		</ul>
 	{/snippet}

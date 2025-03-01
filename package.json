@@ -30,5 +30,10 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check ."
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@node-rs/argon2": "^2.0.2",
+		"@oslojs/crypto": "^1.0.1",
+		"@oslojs/encoding": "^1.1.0"
+	}
 }
