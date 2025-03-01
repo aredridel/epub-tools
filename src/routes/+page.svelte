@@ -2,7 +2,10 @@
 	import { page } from '$app/state';
 </script>
 
-Hi
+<a href="upload">Upload</a>
+
+User "{page.data.user.username}"
+TODO: Logout
 
 <pre>
 {JSON.stringify(page.data, null, 2)}
