@@ -1,38 +1,19 @@
-# sv
+# EPUB Tools
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is very bare-bones so far
 
-## Creating a project
+It’s a SvelteKit project.
 
-If you're seeing this, you've probably already done this step. Congrats!
+You can get it running by cloning it, running `pnpm install` then `pnpm run dev`. 
 
-```bash
-# create a new project in the current directory
-npx sv create
+It’s a full stack NodeJS app; it needs a very current NodeJS (version 23), since it’s using WebAssembly and WASI, and the SQLite bindings.
 
-# create a new project in my-app
-npx sv create my-app
-```
+It’s kinda idiosyncratic right now, but should not be too hard to understand the structure of, such as it is.
 
-## Developing
+It’s meant for small servers and stand-alone deployment, so it uses SQLite, and stores everything in the `data/` directory.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+My approach is going to be “layers of non-destructive edits”: the base HTML can be incrementally improved until it can generate a whole ebook by applying steps like [the Standard Ebooks production steps](https://standardebooks.org/contribute/producing-an-ebook-step-by-step) to yield a fully edited EPUB file. By staying with non-destructive edits, we end up with a relatively small list of things that we’re actually manipulating in the user interface and it should stay well-structured into stages for the production pipeline, and since the amount of data in the system is small, the processing times are seconds at most.
 
-```bash
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
