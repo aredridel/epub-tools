@@ -1,5 +1,5 @@
 import path from "node:path";
-import type { PageServerLoadEvent } from "./$types";
+import type { Actions, PageServerLoadEvent } from "./$types";
 import { readFile } from "node:fs/promises";
 import { whenCode } from "$lib/error";
 
@@ -13,3 +13,16 @@ export async function load(event: PageServerLoadEvent) {
         .catch(whenCode("ENOENT", () => "{}"))) as Metadata;
     return { title: metadata.title ?? "Untitled" }
 }
+
+export const actions = {
+    async generate(event) {
+        event;
+        // Convert sources to EPUB
+    },
+
+    async setMetadata(event) {
+        const update = await event.request.formData();
+        // FIXME: use update
+
+    }
+} satisfies Actions;
