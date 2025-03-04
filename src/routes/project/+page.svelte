@@ -7,7 +7,7 @@
 <h1>Projects</h1>
 
 {#each data.dir as d}
-	{d}
+	<a href="/project/{d}">{d}</a>
 {:else}
 	You have no projects.
 {/each}
