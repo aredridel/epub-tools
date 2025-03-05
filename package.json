@@ -9,7 +9,6 @@
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"svelte": "^5.0.0",
-		"svelte-adapter-bun": "^0.5.2",
 		"svelte-check": "^4.0.0",
 		"typescript": "rc",
 		"vite": "^6.0.0"
@@ -34,6 +33,8 @@
 	"dependencies": {
 		"@node-rs/argon2": "^2.0.2",
 		"@oslojs/crypto": "^1.0.1",
-		"@oslojs/encoding": "^1.1.0"
+		"@oslojs/encoding": "^1.1.0",
+		"@readium/navigator": "^1.3.4",
+		"@readium/shared": "^1.2.1"
 	}
 }

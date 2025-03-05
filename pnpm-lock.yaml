@@ -17,6 +17,12 @@ importers:
       '@oslojs/encoding':
         specifier: ^1.1.0
         version: 1.1.0
+      '@readium/navigator':
+        specifier: ^1.3.4
+        version: 1.3.4
+      '@readium/shared':
+        specifier: ^1.2.1
+        version: 1.2.1
     devDependencies:
       '@sveltejs/adapter-node':
         specifier: ^5.2.12
@@ -39,9 +45,6 @@ importers:
       svelte:
         specifier: ^5.0.0
         version: 5.20.4
-      svelte-adapter-bun:
-        specifier: ^0.5.2
-        version: 0.5.2
       svelte-check:
         specifier: ^4.0.0
         version: 4.1.4(picomatch@4.0.2)(svelte@5.20.4)(typescript@5.8.1-rc)
@@ -340,6 +343,14 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
+  '@readium/navigator@1.3.4':
+    resolution: {integrity: sha512-womyPXRtkcWWOINFBmReeUbyhCGSfwYiu6dVqV3wfhMUbRMHhmm4wqvpxLF3k2+0ZmJdVRmvXgFrlHqExcnNdg==}
+    engines: {node: '>=18'}
+
+  '@readium/shared@1.2.1':
+    resolution: {integrity: sha512-fW2Xhw6RLvc9tr2KUKYy0X5VTX7irZyOywrvi7pf24Y1p+IlPe4XTAArVLn7l4vvAnbMS9MGfHVjrABwUmKWjg==}
+    engines: {node: '>=18'}
+
   '@rollup/plugin-commonjs@28.0.2':
     resolution: {integrity: sha512-BEFI2EDqzl+vA1rl97IDRZ61AIwGH093d9nz8+dThxJNH8oSoB7MjWvPCX3dkaK1/RCJ/1v/R1XB15FuSs0fQw==}
     engines: {node: '>=16.0.0 || 14 >= 14.17'}
@@ -594,12 +605,6 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  globalyzer@0.1.0:
-    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
-
-  globrex@0.1.2:
-    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
-
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
@@ -704,9 +709,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-adapter-bun@0.5.2:
-    resolution: {integrity: sha512-xEtFgaal6UgrCwwkSIcapO9kopoFNUYCYqyKCikdqxX9bz2TDYnrWQZ7qBnkunMxi1HOIERUCvTcebYGiarZLA==}
-
   svelte-check@4.1.4:
     resolution: {integrity: sha512-v0j7yLbT29MezzaQJPEDwksybTE2Ups9rUxEXy92T06TiA0cbqcO8wAOwNUVkFW6B0hsYHA+oAX3BS8b/2oHtw==}
     engines: {node: '>= 18.0.0'}
@@ -718,9 +720,6 @@ packages:
   svelte@5.20.4:
     resolution: {integrity: sha512-2Mo/AfObaw9zuD0u1JJ7sOVzRCGcpETEyDkLbtkcctWpCMCIyT0iz83xD8JT29SR7O4SgswuPRIDYReYF/607A==}
     engines: {node: '>=18'}
-
-  tiny-glob@0.2.9:
-    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
 
   totalist@3.0.1:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
@@ -986,6 +985,10 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
+  '@readium/navigator@1.3.4': {}
+
+  '@readium/shared@1.2.1': {}
+
   '@rollup/plugin-commonjs@28.0.2(rollup@4.34.8)':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.8)
@@ -1214,10 +1217,6 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  globalyzer@0.1.0: {}
-
-  globrex@0.1.2: {}
-
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
@@ -1322,10 +1321,6 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-adapter-bun@0.5.2:
-    dependencies:
-      tiny-glob: 0.2.9
-
   svelte-check@4.1.4(picomatch@4.0.2)(svelte@5.20.4)(typescript@5.8.1-rc):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
@@ -1354,11 +1349,6 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.17
       zimmerframe: 1.1.2
-
-  tiny-glob@0.2.9:
-    dependencies:
-      globalyzer: 0.1.0
-      globrex: 0.1.2
 
   totalist@3.0.1: {}
 
